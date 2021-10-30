@@ -59,7 +59,7 @@ endfunction ()
 
 check_ext ("OpenEXR" "openexr/OpenEXR" 5cfb5dab6dfada731586b0281bdb15ee75e26782)
 check_ext ("OpenVDB" "openvdb/nanovdb" 1c306bcaf7e9f7d52525bab716202bd4f7fff5d1)
-check_ext ("Ptex" "ptex/src" 93c8bad39a6122c42c9d9d8e29d715bd73a6c575)
+check_ext ("Ptex" "ptex/src" a51983a8d60a5b4529453c5032644b73fb09d743)
 check_ext ("double-conversion" "double-conversion/cmake" cc1f75a114aca8d2af69f73a5a959aecbab0e87a)
 check_ext ("filesystem" "filesystem/filesystem" c5f9de30142453eb3c6fe991e82dfc2583373116)
 check_ext ("libdeflate" "libdeflate/common" 1fd0bea6ca2073c68493632dafc4b1ddda1bcbc3)

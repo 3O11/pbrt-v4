@@ -103,6 +103,8 @@ endif ()
 # ptex
 
 set (PTEX_BUILD_SHARED_LIBS OFF CACHE BOOL " " FORCE)
+set (PTEX_BUILD_TOOLS OFF CACHE BOOL " " FORCE)
+set (PTEX_BUILD_TESTS OFF CACHE BOOL " " FORCE)
 
 set (CMAKE_MACOSX_RPATH 1)
 if (WIN32)
@@ -111,7 +113,7 @@ endif ()
 
 add_subdirectory (ptex)
 
-set_property (TARGET Ptex_static ptxinfo halftest ftest rtest wtest PROPERTY FOLDER "ext/ptex")
+set_property (TARGET Ptex_static PROPERTY FOLDER "ext/ptex")
 
 set (PTEX_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/ptex/src/ptex PARENT_SCOPE)
 

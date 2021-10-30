@@ -23,6 +23,11 @@
 
 #include <Ptexture.h>
 
+// windgi.h: your namespace pollution is bad and you should feel bad
+#ifdef RGB
+#undef RGB
+#endif
+
 namespace pbrt {
 
 std::string TextureEvalContext::ToString() const {
