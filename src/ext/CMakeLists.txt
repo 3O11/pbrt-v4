@@ -50,6 +50,9 @@ endif ()
 set (ZLIB_INCLUDE_DIRS ${ZLIB_INCLUDE_DIRS} PARENT_SCOPE)
 set (ZLIB_LIBRARIES ${ZLIB_LIBARIES} PARENT_SCOPE)
 
+message(STATUS "zlib include ${ZLIB_INCLUDE_DIRS}")
+message(STATUS "zlib libs ${ZLIB_LIBRARIES}")
+
 ###########################################################################
 # OpenEXR
 
@@ -112,6 +115,9 @@ if (WIN32)
 endif ()
 
 add_subdirectory (ptex)
+
+message(STATUS "zlib include ${ZLIB_INCLUDE_DIRS}")
+message(STATUS "zlib libs ${ZLIB_LIBRARIES}")
 
 set_property (TARGET Ptex_static PROPERTY FOLDER "ext/ptex")
 
